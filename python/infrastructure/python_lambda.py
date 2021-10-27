@@ -11,10 +11,9 @@ from aws_cdk import (
     aws_lambda as lambda_,
     aws_apigateway as _apigw,
 )
-from aws_cdk.aws_logs import RetentionDays
 
 
-class RustLambdaStack(cdk.Stack):
+class PythonLambdaStack(cdk.Stack):
     def __init__(
         self, scope: cdk.Construct, construct_id: str, target_architecture=lambda_.Architecture.X86_64, **kwargs
     ) -> None:

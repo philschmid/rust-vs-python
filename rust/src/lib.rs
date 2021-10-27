@@ -20,7 +20,6 @@ struct ResponseBody {
 
 pub async fn handler(request: Request, _: Context) -> Result<impl IntoResponse, Error> {
     log::info!("{:?}", request);
-    println!("{:?}", request);
 
     // deserialize body
     let body: Human = match request.payload() {

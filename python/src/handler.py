@@ -1,12 +1,14 @@
-import os
-import boto3
 import json
-
-client = boto3.client("sagemaker-runtime")
 
 
 def handler(event, context):
-
+    print(event)
     body = json.loads(event["body"])
 
-    return {"statusCode": 200, "body": json.loads(response["Body"].read())}
+    born = 2021 - body["age"]
+    res = {"message": f"{body['name']} was born in {born}", "born": born}
+    print(res)
+    return {"statusCode": 200, "body": json.dumps(res)}
+
+
+# handler({"body": json.dumps({"name": "philipp", "age": 26})}, "")
