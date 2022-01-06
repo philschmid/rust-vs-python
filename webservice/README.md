@@ -12,7 +12,7 @@ This repository contains the code to my blog post [Rust 🦀 vs Python 🐍: a w
 **Python**
 
 ```bash
-cd python && uvicorn app:app --port 8080
+cd python && uvicorn app:app --port 8080 --workers 1
 ```
 
 single
@@ -48,11 +48,11 @@ hey -n 1000 -m POST -H 'Content-Type: application/json' -d '{"name":"Philipp Sch
 
 |              | Python     | Rust Debug  | Rust Release | Difference |
 |--------------|------------|-------------|--------------|------------|
-| Total        | 0,6686     | 0,0460      | 0,0218       | -96,74%    |
-| Slowest      | 0,0415     | 0,0109      | 0,0065       | -84,34%    |
-| Fastest      | 0,0175     | 0,0003      | 0,0001       | -99,43%    |
-| Average      | 0,0325     | 0,0021      | 0,0009       | -97,23%    |
-| Requests/sec | 1.495,5691 | 21.746,6538 | 45.874,3437  | 2967,35%   |
+| Total        | 0.4617     | 0,0460      | 0,0218       | -96,74%    |
+| Slowest      | 0.0447     | 0,0109      | 0,0065       | -84,34%    |
+| Fastest      | 0.0075     | 0,0003      | 0,0001       | -99,43%    |
+| Average      | 0.0222     | 0.0021      | 0,0009       | -97,23%    |
+| Requests/sec | 2165.9409 | 21.746,6538 | 45.874,3437  | 2967,35%   |
 
 ![requests-per-second](req_sec.png)
 

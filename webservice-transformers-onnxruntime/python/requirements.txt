@@ -1,0 +1,6 @@
+starlette
+uvicorn
+transformers
+torch
+onnxruntime
+# onnxruntime-gpu
