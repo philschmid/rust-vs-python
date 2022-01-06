@@ -13,3 +13,8 @@ This repository contains the code to my blog post [Rust 🦀 vs Python 🐍: a s
 ## Results
 
 ![latency-results](./latency.png)
+
+
+_Note: Removed webservice `req/sec` since rust has 45874 req/sec, which leads to unreadability of the rest._
+
+![req-sec](./req_sec.png)
