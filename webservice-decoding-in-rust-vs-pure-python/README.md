@@ -189,6 +189,8 @@ Response time histogram:
 ```
 
 ### Rust
+```bash
+
 Summary:
   Total:        52.6566 secs
   Slowest:      0.2706 secs
@@ -211,7 +213,8 @@ Response time histogram:
   0.218 [8]     |
   0.244 [19]    |
   0.271 [9927]  |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-
+```
+```bash
 ### Python
   Summary:
   Total:        51.3509 secs
@@ -235,3 +238,4 @@ Response time histogram:
   0.272 [5868]  |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
   0.304 [2876]  |■■■■■■■■■■■■■■■■■■■■
   0.336 [78]    |■
+```
