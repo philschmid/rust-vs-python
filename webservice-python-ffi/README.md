@@ -1,6 +1,6 @@
-# Rust 🦀 vs Python 🐍: Webservice with decoding HTTP Body in Rust and then calling Python vs pure Python
+# Rust 🦀 vs Python 🐍: native webservice with python ffi calls Part 3
 
-This repository contains the code to my blog post [Rust 🦀 vs Python 🐍: JSON decoding in rust and calling python vs pure python](). It includes the code to deploy both Webservice as well as the benchmarking script.
+This repository contains the code to my blog post [Rust 🦀 vs Python 🐍: native webservice with python ffi calls](). It includes the code to deploy both Webservice as well as the benchmarking script. In this Example I used native wereservice (`actix-web` and `uvicorn + starlette`) with Python FFI calls in rust to use `transformers` and in python default `transformers`. 
 
 ## Code
 

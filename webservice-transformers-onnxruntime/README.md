@@ -1,6 +1,6 @@
-# Rust 🦀 vs Python 🐍: Webservice with decoding HTTP Body in Rust and then calling Python vs pure Python
+# Rust 🦀 vs Python 🐍: a ML webservice using ORT and Transformers (no optimizations)
 
-This repository contains the code to my blog post [Rust 🦀 vs Python 🐍: JSON decoding in rust and calling python vs pure python](). It includes the code to deploy both Webservice as well as the benchmarking script.
+This repository contains the code to my blog post [Rust 🦀 vs Python 🐍: a ML webservice using ORT and Transformers (no optimizations)](). It includes the code to deploy both Webservice as well as the benchmarking script.
 
 ## Code
 
