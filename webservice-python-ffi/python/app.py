@@ -4,7 +4,7 @@ from starlette.routing import Route
 from transformers import pipeline
 import time
 
-classifier = pipeline("text-classification", device=0)
+classifier = pipeline("text-classification", device=-1)
 
 
 async def age(request):
