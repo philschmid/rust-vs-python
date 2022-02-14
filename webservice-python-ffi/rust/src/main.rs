@@ -43,7 +43,7 @@ async fn index(text_classification: Data<Py<PyAny>>, r: web::Json<RequestData>) 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     let text_classification: Py<PyAny> = Python::with_gil(|py| {
-        let kwargs = [("device", 0)].into_py_dict(py);
+        let kwargs = [("device", -1)].into_py_dict(py);
 
         let transformers = PyModule::import(py, "transformers").unwrap();
         return transformers
